@@ -1,0 +1,11 @@
+<div class="col-md-12">
+    <button class="btn btn-primary col-md-1 col-md-offset-2" ui-sref=".1">1</button>
+    <button class="btn btn-success col-md-1 col-md-offset-2" ui-sref=".2">2</button>
+    <button class="btn btn-warning col-md-1 col-md-offset-2" ui-sref=".3">3</button>
+</div>
+<button class="btn btn-primary" ng-repeat="x in data">{{x}}</button>
+<button class="btn btn-primary" ng-repeat="x in vm.dat">{{x}}</button>
+
+<div  class="col-md-12">
+    <div ui-view=""/>
+</div>

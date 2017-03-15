@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+
+</head>
+<style>
+    body {
+        padding:4em;
+        background:#fcfcfc;
+    }
+    .wrap {
+        width:200px;
+        margin:auto; z-index:1;
+    }
+
+    .msg {
+        color: whitesmoke;
+        text-align:center;
+        font-family: 'Bree Serif', Courier, monospaced;
+        font-size:3.5em;
+        width:200px;
+        position:absolute;
+        margin:55px 0 0 2px;
+        pointer-events: none;
+    }
+
+    .sticker {
+        width:200px;
+        height:200px;
+        position:absolute;
+        background: url(http://www.w3cplus.com/sites/default/files/blogs/2015/1506/sticker.png) top center no-repeat;
+        animation: spin 10s linear infinite;
+        animation-play-state: paused;
+    }
+
+    .sticker:hover {
+        animation-play-state: running;
+    }
+
+
+    @keyframes spin {
+        100% {transform: rotate(1turn); }
+    }
+</style>
+<body>
+<div class="wrap">
+    <div class="sticker"></div>
+    <div class="msg">new!</div>
+</div>
+</body>
+</html>

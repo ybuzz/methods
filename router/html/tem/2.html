@@ -1,0 +1,15 @@
+<style>
+
+    .ball {
+        animation-name: ballmove; animation-duration: 5s; animation-timing-function: ease-in-out;
+        animation-iteration-count: 1; animation-iteration-count: 3 ;animation-delay: 1s;
+        animation-fill-mode:both;animation-direction: alternate}
+    @keyframes ballmove {
+        0% { transform: translateX(200px) rotate(0); }
+        20% { transform: translateX(-10px) rotate(-1turn); }
+        100% { transform: translateX(450px) rotate(2turn); }
+    }
+</style>
+
+<button class="btn btn-warning ball">asd</button>
+
